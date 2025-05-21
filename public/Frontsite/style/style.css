@@ -1,0 +1,600 @@
+/* ==== IMPORT LIBRARY ==== */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/* ==== GLOBAL RESET ==== */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #343a40;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    max-width: 1900px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==== NAVBAR ==== */
+.custom-navbar {
+    background-color: #008080 !important;
+    padding: 0.25rem 1rem;
+    min-height: auto;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 128, 128, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 0.5rem 1rem;
+}
+
+.custom-navbar:hover {
+    background-color: #006666 !important;
+    box-shadow: 0 6px 16px rgba(0, 102, 102, 0.5);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #fff !important;
+    padding: 0.2rem 0;
+    line-height: 1.2;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #b2dfdb !important;
+}
+
+.navbar-brand i,
+.navbar-brand .fa,
+.navbar-brand svg {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.navbar-brand img {
+    height: 2rem;
+    width: auto;
+    vertical-align: middle;
+}
+
+.navbar .nav-link,
+.navbar .dropdown-toggle {
+    font-size: 1.3rem;
+    color: #fff !important;
+    font-weight: 500;
+    padding: 0.15rem 0.75rem;
+    line-height: 1.2;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+    background-color: #004d4d;
+    color: #b2dfdb !important;
+}
+
+.navbar .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    min-width: 160px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #198754;
+    color: white;
+}
+
+.dropdown-item button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* ==== SECTION HEADER ==== */
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0 10px;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: #212529;
+}
+
+.section-header p {
+    font-size: 1rem;
+    color: #6c757d;
+    font-weight: 400;
+}
+
+/* ==== CUSTOM CARD ==== */
+.custom-card {
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.custom-card .card-body {
+    padding: 0;
+}
+
+/* ==== CARD MODERN UNTUK DASHBOARD ==== */
+.card.card-modern {
+    border-radius: 20px;
+    padding: 1.5rem;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #eaeaea;
+}
+
+.card.card-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    border-color: #dedede;
+}
+
+.card.card-modern .card-title-primary {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 0.3rem;
+}
+
+.card.card-modern p.card-text {
+    margin-bottom: 0.3rem;
+    color: #6c757d;
+}
+
+.card.card-modern .card-meta {
+    font-size: 0.9rem;
+    color: #999;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 0.8rem;
+}
+
+.card.card-modern .btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.card.card-modern .btn {
+    min-width: 110px;
+    justify-content: center;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+/* ==== BUTTON ==== */
+.btn {
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.btn-success {
+    font-size: 1rem;
+    padding: 10px 24px;
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #157347;
+    border-color: #146c43;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(21,115,71,0.4);
+}
+
+.btn-sm {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+}
+
+.btn-info {
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-info:hover,
+.btn-info:focus {
+    background-color: #31d2f2;
+    border-color: #25cff2;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(13,202,240,0.4);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(220,53,69,0.4);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    box-shadow: 0 4px 12px rgba(13,110,253,0.4);
+}
+
+/* ==== CARD ==== */
+.card {
+    border-radius: 14px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    border: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ==== CARD TITLE ==== */
+.card-title-primary {
+    font-weight: 700;
+    color: #000000;
+    font-size: 1.25rem;
+}
+
+/* ==== EMPTY STATE ==== */
+.empty-state {
+    text-align: center;
+    margin: 80px auto;
+    color: #6c757d;
+    font-weight: 500;
+    font-size: 1rem;
+    user-select: none;
+}
+
+.empty-state img {
+    opacity: 0.75;
+    margin-bottom: 1.25rem;
+    max-width: 180px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: opacity 0.3s ease;
+}
+
+.empty-state img:hover {
+    opacity: 0.9;
+}
+
+/* === TRANSISI HALUS SAAT SHOW/HIDE HISTORY === */
+#historyListCollapse.collapse {
+    transition: height 0.4s ease, opacity 0.4s ease;
+}
+
+#historyListCollapse.collapsing {
+    height: 0 !important;
+    opacity: 0.1;
+}
+
+#historyListCollapse.collapse.show {
+    opacity: 1;
+}
+
+/* === CARD HISTORY: GUNAKAN STYLE YANG SAMA DENGAN CARD UTAMA === */
+.card-history {
+    border-radius: 14px;
+    background-color: #fff;
+    border: none;
+    padding: 1.5rem;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.card-history:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.card-history .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 0.25rem;
+}
+
+.card-history .card-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+}
+
+.card-history .text-muted {
+    font-size: 0.9rem;
+    color: #6c757d !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.card-history .text-muted::before {
+    content: "\f017";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    display: inline-block;
+}
+
+.card-history .d-flex.justify-content-between {
+    gap: 12px;
+    justify-content: center !important;
+    flex-wrap: wrap;
+}
+
+.card-history .btn {
+    min-width: 110px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card-history .btn:hover {
+    background-color: #008080 !important;
+    color: #fff !important;
+}
+
+.card-history .btn-info {
+    background-color: #f39c12;
+    border: none;
+    color: white;
+}
+
+.card-history .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+}
+
+.card-history .btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    color: white;
+}
+
+.card-history .btn-info::before {
+    content: "\f06e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.card-history .btn-danger::before {
+    content: "\f2ed";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.card-history .btn-primary::before {
+    content: "\f0e2";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+/* Header Riwayat */
+h4.fw-bold.text-primary {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #008080 !important;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h4.fw-bold.text-primary::before {
+    content: '🕒';
+}
+
+/* Tombol Toggle */
+.toggle-history-btn {
+    background-color: #008080;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-history-btn:hover {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+/* ==== MODAL ==== */
+.modal-content {
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+}
+
+/* ==== TABLE ==== */
+.table {
+    margin-bottom: 0;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* ==== ALERT ANIMATION ==== */
+@keyframes fadeOutUp {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-20px); }
+}
+
+.animate__fadeOutUp {
+    animation: fadeOutUp 1s forwards;
+}
+
+/* ==== BUTTON KUSTOM UNTUK DASHBOARD LIST ==== */
+.btn-lihat {
+    background-color: #f39c12;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: 6px 16px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 6px rgba(243, 156, 18, 0.3);
+}
+
+.btn-lihat:hover {
+    background-color: #008080;
+    color: white;
+}
+
+.btn-selesai {
+    background-color: #198754;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: 6px 16px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 6px rgba(25, 135, 84, 0.3);
+}
+
+.btn-selesai:hover {
+    background-color: #008080;
+    color: white;
+}
+
+.btn-hapus {
+    background-color: #dc3545;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    padding: 6px 16px;
+    transition: background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 6px rgba(220, 53, 69, 0.3);
+}
+
+.btn-hapus:hover {
+    background-color: #008080;
+    color: white;
+}
+
+.card .card-body .d-flex.justify-content-between {
+    justify-content: center !important;  /* posisikan tombol di tengah */
+    gap: 12px;                            /* jarak antar tombol */
+    flex-wrap: wrap;
+}

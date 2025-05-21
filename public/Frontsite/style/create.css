@@ -1,0 +1,235 @@
+/* create.css */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    height: auto;
+    background-color: #e6f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #004d4d;
+    overflow-x: hidden; /* cegah scroll horizontal */
+}
+
+.container.form-container {
+    width: 100%;
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: transparent;
+    min-height: auto;       /* hilangkan min-height full viewport */
+    max-height: 90vh;       /* batasi tinggi maksimal */
+    overflow-x: hidden;
+    overflow-y: auto;       /* scroll vertikal jika perlu */
+    flex-grow: 0;
+}
+
+.title {
+    font-weight: 700;
+    color: #008080;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.title i {
+    color: #E65100;
+    margin-right: 0.75rem;
+    font-size: 2rem;
+}
+
+.form-label {
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+    color: #004d4d;
+    font-size: 1rem;
+}
+
+.form-label i {
+    color: #E65100;
+    margin-right: 0.4rem;
+    font-size: 1.2rem;
+}
+
+.form-modern .form-control,
+.form-modern .form-select {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #008080;
+    border-radius: 0;
+    background: transparent;
+    padding: 0.3rem 0.3rem;
+    font-size: 0.95rem;
+    color: #004d4d;
+    transition: border-color 0.3s ease;
+}
+
+.form-modern .form-control::placeholder {
+    color: #7fcfcf;
+    font-style: italic;
+}
+
+.form-modern .form-control:focus,
+.form-modern .form-select:focus {
+    outline: none;
+    border-bottom-color: #E65100;
+}
+
+.mb-3 {
+    margin-bottom: 0.5rem !important;
+}
+
+h4 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.btn {
+    border-radius: 0.35rem;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.15s ease;
+    cursor: pointer;
+    color: white !important;
+    border: none;
+    font-size: 0.95rem;
+}
+
+.btn i {
+    margin-right: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.btn-success {
+    background-color: #008080;
+}
+
+.btn-success:hover, .btn-success:focus {
+    background-color: #E65100;
+    transform: scale(1.05);
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #004d4d;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #E65100;
+    transform: scale(1.05);
+    outline: none;
+}
+
+.btn-secondary {
+    background-color: #666666;
+}
+
+.btn-secondary:hover, .btn-secondary:focus {
+    background-color: #E65100;
+    transform: scale(1.05);
+    outline: none;
+}
+
+.btn-kembali {
+  display: flex;
+  justify-content: center;   /* Tengah horizontal */
+  align-items: center;       /* Tengah vertikal */
+  gap: 0.5rem;
+  background-color: #008080; /* Warna dasar sama seperti btn simpan */
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transisi tambahan untuk scale */
+  border: none;
+  width: 100%;               /* Lebar penuh */
+  box-sizing: border-box;    /* Termasuk padding dalam width */
+}
+
+.btn-kembali:hover {
+  background-color: #E65100; /* Hover oranye */
+  transform: scale(1.05);    /* Membesar saat hover */
+}
+
+.btn-kembali i {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 28vh;
+}
+
+.table {
+    width: 100%;
+    font-size: 0.9rem;
+    border-collapse: collapse;
+    margin-top: 0.6rem;
+    table-layout: fixed;
+}
+
+.table thead tr {
+    background-color: #004d4d;
+    color: white;
+}
+
+.table th, .table td {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #a3d5d5;
+    word-wrap: break-word;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9f7f7;
+}
+
+.btn-lihat-gambar {
+    background-color: #008080;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-lihat-gambar:hover {
+    background-color: #FFA726;
+    color: white;
+    border: none;
+}
+
+/* Responsif */
+@media (max-width: 992px) {
+    .container.form-container {
+        max-width: 95vw;
+        padding: 1rem 0.8rem 1.2rem 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container.form-container {
+        max-width: 100vw;
+        padding: 0.8rem 0.5rem 1rem 0.5rem;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
