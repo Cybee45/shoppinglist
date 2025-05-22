@@ -74,7 +74,7 @@
         </div>
     @else
         <div class="empty-state">
-            <img src="{{ asset('images/empty-list.png') }}" alt="Empty" width="180" class="mb-3">
+            <img src="{{ asset('images/List.png') }}" alt="Empty" width="180" class="mb-3">
             <h5 class="text-muted">Belum ada daftar belanja.</h5>
             <p class="text-muted">Yuk buat daftar pertamamu di atas! 🛒</p>
         </div>
